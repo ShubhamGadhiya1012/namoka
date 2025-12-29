@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namoka - Luxury Resort & Hotel Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>NAMOKA</h1>
+                <span class="logo-subtitle">Luxury Resort</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#rooms" class="nav-link">Rooms</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#contact" class="btn-book">Book Now</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Image Slider -->
+    <section id="home" class="hero">
+        <div class="slider">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80')">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1920&q=80')">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1920&q=80')">
+                <div class="slide-overlay"></div>
+            </div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1920&q=80')">
+                <div class="slide-overlay"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-subtitle">Welcome to Paradise</span>
+                <h2 class="hero-title">Experience Luxury <br> Beyond Imagination</h2>
+                <p class="hero-description">Indulge in world-class hospitality where every moment becomes a cherished memory</p>
+                <div class="hero-buttons">
+                    <a href="#rooms" class="btn-primary">Explore Rooms</a>
+                    <a href="#about" class="btn-secondary">Discover More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-controls">
+            <button class="slider-btn prev" id="prevSlide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <div class="slider-dots" id="sliderDots"></div>
+            <button class="slider-btn next" id="nextSlide">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll to Explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Story</span>
+                <h2 class="section-title">A Legacy of Excellence</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80" alt="Namoka Resort">
+                    <div class="about-badge">
+                        <span class="badge-number">25+</span>
+                        <span class="badge-text">Years of Excellence</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Where Elegance Meets Comfort</h3>
+                    <p>At Namoka, we've been redefining luxury hospitality for over two decades. Nestled in a pristine location, our resort offers an unparalleled experience that seamlessly blends natural beauty with sophisticated elegance.</p>
+                    <p>Every detail has been meticulously crafted to ensure your stay transcends expectations. From our world-class amenities to our dedicated staff, we're committed to creating moments that last a lifetime.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🏆</div>
+                            <h4>Award Winning</h4>
+                            <p>Multiple international hospitality awards</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🌟</div>
+                            <h4>5-Star Service</h4>
+                            <p>Exceptional service that exceeds expectations</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🌿</div>
+                            <h4>Sustainable</h4>
+                            <p>Eco-friendly practices and green initiatives</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">What We Offer</span>
+                <h2 class="section-title">Premium Services & Amenities</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1544148103-0773bf10d330?w=600&q=80')"></div>
+                    <div class="service-content">
+                        <h3>Fine Dining Restaurant</h3>
+                        <p>Savor exquisite culinary creations prepared by world-renowned chefs. Our restaurants offer diverse international cuisines in elegant settings.</p>
+                        <ul class="service-features">
+                            <li>Michelin-starred cuisine</li>
+                            <li>Private dining experiences</li>
+                            <li>Wine & cocktail bars</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1540541338287-41700207dee6?w=600&q=80')"></div>
+                    <div class="service-content">
+                        <h3>Luxury Spa & Wellness</h3>
+                        <p>Rejuvenate your body and soul at our state-of-the-art spa. Experience therapeutic treatments in a serene atmosphere.</p>
+                        <ul class="service-features">
+                            <li>Holistic wellness treatments</li>
+                            <li>Yoga & meditation studios</li>
+                            <li>Infinity pool & jacuzzi</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1559599746-9e73faf5d1eb?w=600&q=80')"></div>
+                    <div class="service-content">
+                        <h3>Concierge Services</h3>
+                        <p>Our dedicated team is available 24/7 to fulfill your every need, ensuring a seamless and memorable stay.</p>
+                        <ul class="service-features">
+                            <li>Personal butler service</li>
+                            <li>Event planning & coordination</li>
+                            <li>Transportation arrangements</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image" style="background-image: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&q=80')"></div>
+                    <div class="service-content">
+                        <h3>Recreational Facilities</h3>
+                        <p>Stay active and entertained with our comprehensive range of recreational activities and world-class facilities.</p>
+                        <ul class="service-features">
+                            <li>Championship golf course</li>
+                            <li>Tennis & sports complex</li>
+                            <li>Water sports & activities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Accommodations</span>
+                <h2 class="section-title">Luxurious Rooms & Suites</h2>
+            </div>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80" alt="Deluxe Room">
+                        <div class="room-label">Popular</div>
+                    </div>
+                    <div class="room-content">
+                        <div class="room-header">
+                            <h3>Deluxe Ocean View</h3>
+                            <div class="room-price">
+                                <span class="price">$450</span>
+                                <span class="period">/night</span>
+                            </div>
+                        </div>
+                        <p>Elegant room with breathtaking ocean views, premium amenities, and a private balcony.</p>
+                        <div class="room-amenities">
+                            <span>🛏️ King Bed</span>
+                            <span>👥 2 Guests</span>
+                            <span>📐 45m²</span>
+                            <span>🌊 Ocean View</span>
+                        </div>
+                        <a href="#contact" class="btn-room">Reserve Now</a>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80" alt="Executive Suite">
+                        <div class="room-label">Best Value</div>
+                    </div>
+                    <div class="room-content">
+                        <div class="room-header">
+                            <h3>Executive Suite</h3>
+                            <div class="room-price">
+                                <span class="price">$750</span>
+                                <span class="period">/night</span>
+                            </div>
+                        </div>
+                        <p>Spacious suite with separate living area, luxury bathroom, and panoramic views.</p>
+                        <div class="room-amenities">
+                            <span>🛏️ King Bed</span>
+                            <span>👥 3 Guests</span>
+                            <span>📐 75m²</span>
+                            <span>🏙️ City View</span>
+                        </div>
+                        <a href="#contact" class="btn-room">Reserve Now</a>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80" alt="Presidential Suite">
+                        <div class="room-label">Exclusive</div>
+                    </div>
+                    <div class="room-content">
+                        <div class="room-header">
+                            <h3>Presidential Suite</h3>
+                            <div class="room-price">
+                                <span class="price">$1,500</span>
+                                <span class="period">/night</span>
+                            </div>
+                        </div>
+                        <p>Ultimate luxury experience with private pool, butler service, and opulent interiors.</p>
+                        <div class="room-amenities">
+                            <span>🛏️ 2 Bedrooms</span>
+                            <span>👥 4 Guests</span>
+                            <span>📐 150m²</span>
+                            <span>🏊 Private Pool</span>
+                        </div>
+                        <a href="#contact" class="btn-room">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Guest Reviews</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Namoka exceeded all expectations. The attention to detail, impeccable service, and stunning location made our anniversary truly unforgettable. We can't wait to return!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-image" style="background-image: url('https://i.pravatar.cc/100?img=1')"></div>
+                        <div class="author-info">
+                            <h4>Sarah Mitchell</h4>
+                            <p>New York, USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"From the moment we arrived, we felt like royalty. The staff went above and beyond, the rooms were pristine, and the dining experience was world-class. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-image" style="background-image: url('https://i.pravatar.cc/100?img=5')"></div>
+                        <div class="author-info">
+                            <h4>James Anderson</h4>
+                            <p>London, UK</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"A paradise on earth! The resort's attention to sustainability without compromising luxury is commendable. Perfect for both relaxation and adventure."</p>
+                    <div class="testimonial-author">
+                        <div class="author-image" style="background-image: url('https://i.pravatar.cc/100?img=9')"></div>
+                        <div class="author-info">
+                            <h4>Emma Chen</h4>
+                            <p>Singapore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Ready to experience luxury like never before? Contact us to make your reservation or inquire about our exclusive packages.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Paradise Bay, Tropical Island<br>Luxury District, 12345</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567<br>Available 24/7</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>reservations@namoka.com<br>concierge@namoka.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" id="phone" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <input type="date" id="date" placeholder="Check-in Date">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NAMOKA</h3>
+                    <p>Experience luxury redefined. Where every moment becomes an unforgettable memory.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Fine Dining</a></li>
+                        <li><a href="#services">Spa & Wellness</a></li>
+                        <li><a href="#services">Concierge</a></li>
+                        <li><a href="#services">Recreation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Namoka Luxury Resort. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
